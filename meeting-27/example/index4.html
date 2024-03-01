@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <ul>
+            <li>menu1</li>
+            <section>menu2</section>
+            <li id="target">menu3
+              <a href="">1</a>
+              <a href="">2</a>
+              <a href="">3</a>
+            </li>
+            <div>menu4</div>
+            <li>menu5</li>
+        </ul>
+    </div>
+</body>
+<script>
+    let _target = document.getElementById('target')
+    console.log(_target.nextElementSibling);
+    console.log(_target.previousElementSibling);
+    console.log(_target.parentElement);
+    console.log(_target.parentElement.parentElement);
+    console.log(_target.children);
+    console.log(_target.children[0]);
+    console.log(_target.nodeName);
+    console.log(_target.nextSibling);
+</script>
+</html>

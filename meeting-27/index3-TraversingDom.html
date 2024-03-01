@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <ul id="test">
+            <li>menu1</li>
+            <section>menu2</section>
+            <li id="target">menu3
+              <a href="">1</a>
+              <a href="">2111111</a>
+              <a href="">3</a>
+            </li>
+            <div>menu4</div>
+            <li>menu5</li>
+        </ul>
+    </div>
+</body>
+<script>
+    let _ul = document.getElementById('test')
+    console.log(_ul.children[2].children[1]);
+    
+    // ------------------------
+    let target = document.getElementById('target')
+    console.log(target.parentElement);
+    console.log(target.parentElement.parentElement);
+    let _child = target.children[1]
+    console.log(_child);
+    console.log(target.nextElementSibling);
+    console.log(target.previousElementSibling);
+    console.log(document.getElementById('target').nodeName);
+    document.title='Test'
+    console.log(document.domain);
+</script>
+</html>

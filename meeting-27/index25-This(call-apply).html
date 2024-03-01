@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var name = "hosein"
+    function getname(){
+       console.log(this.name);
+    }
+    const obj={
+        name:'ali',
+        print(){
+            return getname.call(obj)
+        }
+    }
+    // obj.print()
+    const myprint= obj.print;
+    myprint()
+
+</script>
+</html>

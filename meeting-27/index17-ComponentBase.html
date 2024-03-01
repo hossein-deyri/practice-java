@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #list {
+            width: 300px;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            background-color: rgb(196, 196, 196);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+        .li {
+            width: 100%;
+            height: 50px;
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            border-radius: 5px;
+            margin: 10px 10px;
+            transition: .4s;
+
+
+        }
+
+        #list>li:hover {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="_create()">Click Here</button>
+    <ul id="list"></ul>
+</body>
+<script>
+    let r
+    let g
+    let b
+    function _create() {
+
+        _background()
+
+        let _li = document.createElement('li')
+        _li.classList.add('li')
+        _li.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')'
+        _li.innerText = 'Hello Word'
+
+        document.getElementById('list').appendChild(_li)
+
+    }
+    function _background() {
+        r = parseInt(Math.random() * 256)
+        g = parseInt(Math.random() * 256)
+        b = parseInt(Math.random() * 256)
+    }
+</script>
+
+</html>

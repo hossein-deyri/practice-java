@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            transition: 1s;
+        }
+        h1:hover{
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+</body>
+<script>
+    let _h1 = document.createElement('h1')
+    _h1.innerText='Hossein'
+    _h1.style.color = "red"
+    document.getElementById('box1').appendChild(_h1)
+    console.log(_h1);
+</script>
+</html>

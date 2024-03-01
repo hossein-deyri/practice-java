@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="name"></h1>
+    <button onclick="_generate()">Click To Create</button>
+</body>
+<script>
+    function _generate() {
+        const x = ['i', 'o', 'a', 'u', 'e']
+        const y = ['q', 'w', 'r', 't', 'y', 'p', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'z', 'x', 'c', 'v', 'b', 'n', 'm']
+
+        let txt = ''
+        txt = txt + y[parseInt(Math.random() * y.length)]
+        txt = txt + x[parseInt(Math.random() * x.length)]
+        txt = txt + y[parseInt(Math.random() * y.length)]
+        txt = txt + x[parseInt(Math.random() * x.length)]
+        txt = txt + y[parseInt(Math.random() * y.length)]
+        document.getElementById('name').innerText=txt
+    }
+    setInterval(_generate,1000)
+</script>
+
+</html>

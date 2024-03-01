@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #txt{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="para" id="txt">1</li>
+        <li class="para" id="txt">2</li>
+        <li class="para" id="txt">3</li>
+        <li class="para" id="txt">4</li>
+    </ul>
+</body>
+<script>
+    let _li = document.getElementsByClassName('para')
+    console.log(_li)
+    _li[0].innerText='text changed'
+</script>
+</html>

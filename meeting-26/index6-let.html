@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = 'hossein'
+        console.log(name)
+        name = 'ali'
+        console.log(name);
+          // tarife variable dar global
+        {
+            let name1 = 'parsa'
+            console.log(name1);
+            // tarife variable dar localscape
+        }
+        // console.log(name1); in reference error ast chon localscape ast dr tarife variable
+        console.log(name);
+        // *********************
+        const lname = 'deyri'
+        console.log(lname);
+        // lname = 'amiri' type error chon digar nemishe taghir dad variable
+        console.log(lname);
+        {
+            const lname = 'amini'
+            console.log(lname);
+        }
+
+    </script>
+</body>
+</html>

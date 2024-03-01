@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .txt{
+            color: red;
+            font-size: 60px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="demo" class="para">Hossein Deyri</h1>
+</body>
+<script>
+    document.getElementById('demo').classList.add('txt')
+    setTimeout(() => {
+        document.getElementById('demo').classList.remove('txt')
+    }, 1000);
+</script>
+</html>
